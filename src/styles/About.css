@@ -1,0 +1,35 @@
+.about-section {
+    background: rgba(26, 26, 26, 0.9);
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ffffff;
+    max-width: 800px;
+    margin: auto;
+    opacity: 0.9;
+  }
+  
+  .about-content strong {
+    color: #00ff88;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 3rem 2rem;
+    }
+  
+    .about-content p {
+      font-size: 1.1rem;
+    }
+  }
+  

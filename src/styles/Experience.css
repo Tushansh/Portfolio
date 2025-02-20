@@ -1,0 +1,116 @@
+.experience-section {
+    padding: 4rem;
+    text-align: center;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Green vertical timeline line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #00ff88;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Timeline items */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Left & Right positioning */
+  .timeline-item.left {
+    text-align: right;
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    text-align: left;
+    left: 50%;
+  }
+  
+  /* Timeline connecting dots */
+  .timeline-dot {
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background: #00ff88;
+    border-radius: 50%;
+    left: calc(100% + 5px);
+  }
+  
+  .timeline-item.right .timeline-dot {
+    left: -10px;
+  }
+  
+  /* Timeline Content Box */
+  .timeline-content {
+    background: rgba(26, 26, 26, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 136, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+  }
+  
+  .timeline-content h3 {
+    color: #00ff88;
+  }
+  
+  .timeline-content .company {
+    font-weight: bold;
+  }
+  
+  .timeline-content .duration {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .timeline-content .achievements {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .timeline-content .achievements li {
+    background: #2a2a2a;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 20px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      left: 0;
+      padding-left: 40px;
+      text-align: left;
+    }
+  
+    .timeline-dot {
+      left: 10px;
+    }
+  }
+  
